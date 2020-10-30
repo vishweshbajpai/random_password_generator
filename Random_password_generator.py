@@ -20,19 +20,19 @@ def generate():
     if stren.get() == 1:
         for i in range(0, length):
             password = password + random.choice(poor)
-        entry.insert(10, password)
+        entry.insert(0, password)
 
     # if strength selected is medium
     elif stren.get() == 0:
         for i in range(0, length):
             password = password + random.choice(medium)
-        entry.insert(10, password)
+        entry.insert(0, password)
 
     # if strength selected is strong
     elif stren.get() == 3:
         for i in range(0, length):
             password = password + random.choice(strong)
-        entry.insert(10, password)
+        entry.insert(0, password)
     else:
         print("Please choose an option")
 
